@@ -1,2 +1,8 @@
+//timer
 var today = moment();
-$("#currentDay").text(today.format("Do MMM, YYYY [at] h:mm:ss a"));
+$("#currentDay").text(today.format("dddd, Do MMM, YYYY"));
+
+//variable
+var textArea = document.querySelector('.plan');
+
+function 
