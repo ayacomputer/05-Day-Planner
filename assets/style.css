@@ -1,5 +1,17 @@
+:root {
+    --darkColor: rgb(31, 33, 39);
+    --lightColor: rgb(204, 214, 200);
+    --primeColor: rgba(223, 100, 78, 0.911);
+    --secondColor: rgba(190, 172, 9, 0.87);
+    --thirdColor: rgba(45, 100, 29, 0.87);
+    --primeBorder: dashed 2px var(--lightColor);
+    --secondBorder: solid 2px var(--lightColor);
+    --borderRadius: 1.5rem;
+   }
+
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito','Outfit', sans-serif;
     font-size: 16px;
     line-height: 1;
   }
@@ -8,17 +20,18 @@ body {
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
-    border-left: 1px solid black;
+    color: var(--darkColor);
+    border-left: 1px solid var(--darkColor);
     padding: 10px;
   }
   
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: black;
+    color: var(--darkColor);
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid var(--darkColor);
+    padding: 3rem auto;
   }
   
   .description {
@@ -33,36 +46,36 @@ body {
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;
+    border-top: 1px solid var(--lightColor);
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
+    background-color: var(--lightColor);
+    color: var(--darkColor);
+    border-top: 1px dashed var(--darkColor);
   }
   
   .past {
-    background-color: #d3d3d3;
-    color: white;
+    background-color: var(--secondColor);
+    color: var(--lightColor);
   }
   
   .present {
-    background-color: #ff6961;
-    color: white;
+    background-color: var(--primeColor);
+    color: var(--lightColor);
   }
   
   .future {
-    background-color: #77dd77;
-    color: white;
+    background-color: var(--thirdColor);
+    color: var(--lightColor);
   }
   
   .saveBtn {
-    border-left: 1px solid black;
+    border-left: 1px solid var(--darkColor);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
+    background-color: var(--primeColor);
+    color: var(--lightColor);
   }
   
   .saveBtn i:hover {
