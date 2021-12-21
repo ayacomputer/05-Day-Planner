@@ -34,7 +34,7 @@ body {
     padding: 3rem auto;
   }
   
-  .description {
+  .plan {
     white-space: pre-wrap;
   }
   
@@ -92,18 +92,5 @@ body {
     color: var(--darkColor);
   }
 
-  .past {
-      background-color: var(--secondBorder);
-  }
-  
-  .present {
-
-    background-color: var(--primeColor);
-  }
-
-  .future {
-      background-color: var(--thirdColor);
-
-}
-
+ 
   
