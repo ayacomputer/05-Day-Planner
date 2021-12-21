@@ -91,3 +91,19 @@ body {
    text-decoration: none;
     color: var(--darkColor);
   }
+
+  .past {
+      background-color: var(--secondBorder);
+  }
+  
+  .present {
+
+    background-color: var(--primeColor);
+  }
+
+  .future {
+      background-color: var(--thirdColor);
+
+}
+
+  
