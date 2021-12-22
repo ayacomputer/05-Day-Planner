@@ -11,10 +11,10 @@ var clearBtn = $('.clearBtn');
 
 
 timeBlock.each(function () {
-    $(this).children(":first").addClass("hour col-md-1");
-    $(this).children("textarea").addClass("col-md-9 plan")
-    $(this).children("button:first").addClass("clearBtn col-md-1");
-    $(this).children("button:last").addClass("btn saveBtn col-md-1");
+    $(this).children(":first").addClass("hour col-sm-1");
+    $(this).children("textarea").addClass("col-sm-9 plan")
+    $(this).children("button:first").addClass("clearBtn col-sm-1");
+    $(this).children("button:last").addClass("btn saveBtn col-sm-1");
 })
 
 function changeBgColor() {

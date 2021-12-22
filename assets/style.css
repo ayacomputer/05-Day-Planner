@@ -1,9 +1,9 @@
 :root {
     --darkColor: rgb(31, 33, 39);
-    --lightColor: rgb(204, 214, 200);
-    --primeColor: rgba(233, 119, 98, 0.911);
+    --lightColor: rgb(166, 185, 159);
+    --primeColor: rgba(226, 73, 46, 0.911);
     --secondColor: rgba(190, 172, 9, 0.911);
-    --thirdColor: rgba(53, 99, 39, 0.87);
+    --thirdColor: rgba(49, 63, 184, 0.87);
    }
 
 
@@ -96,7 +96,7 @@ body {
       padding-top: 3rem;
       padding-bottom: 3rem;
    text-decoration: none;
-    color: var(--darkColor);
+    color: var(--lightColor);
   }
 
  
