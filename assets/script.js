@@ -17,7 +17,6 @@ timeBlock.each(function () {
     $(this).children("button:last").addClass("btn saveBtn col-md-1");
 })
 
-
 function changeBgColor() {
 
     $('.timeBlock').each(function () {
@@ -33,7 +32,16 @@ function changeBgColor() {
     })
 
 }
-changeBgColor();
+
+
+function getSavedData() {
+    $('.timeBlock').each(function () {
+        var blockHour = parseInt($(this).attr('id'));
+        var savedData = localStorage.getItem(blockHour);
+        $(this).children('textarea').val(savedData);
+
+    })
+};
 
 
 
@@ -52,10 +60,5 @@ clearBtn.click(function () {
 })
 
 
-
-
-
-    // give data class on HTML 
-    // var btnHour = $(this).attr('data-hour');
-    // var text = $('textarea[data-tArea=' + btnHour + ']').val()
-    // var text = $(`textarea[data-tArea=${btnHour }]`).val()
+changeBgColor();
+getSavedData();
