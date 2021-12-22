@@ -1,7 +1,7 @@
 //timer
 var today = moment();
 $("#currentDay").text(today.format("dddd, Do MMM, YYYY"));
-
+$("#currentTime").text(today.format("[at] HH:mm a"));
 //variable
 var timeBlock = $('.timeBlock');
 var currentHour = moment().hour();
@@ -13,7 +13,7 @@ var clearBtn = $('.clearBtn');
 timeBlock.each(function () {
     $(this).children(":first").addClass("hour col-md-1");
     $(this).children("textarea").addClass("col-md-9 plan")
-    $(this).children("button:first").addClass("btn clearBtn col-md-1");
+    $(this).children("button:first").addClass("clearBtn col-md-1");
     $(this).children("button:last").addClass("btn saveBtn col-md-1");
 })
 
@@ -35,6 +35,8 @@ function changeBgColor() {
 }
 changeBgColor();
 
+
+
 saveBtn.click(function () {
     var textValue = $(this).siblings('textarea').val()
     var btnHour = $(this).parent().attr('id');
@@ -45,7 +47,8 @@ saveBtn.click(function () {
 
 clearBtn.click(function () {
     var btnHour = $(this).parent().attr('id');
-    localStorage.clear(btnHour, textValue);
+    $(this).siblings('textarea').val(" ");
+    localStorage.removeItem(btnHour);
 })
 
 

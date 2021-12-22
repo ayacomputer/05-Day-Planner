@@ -1,9 +1,9 @@
 :root {
     --darkColor: rgb(31, 33, 39);
     --lightColor: rgb(204, 214, 200);
-    --primeColor: rgba(223, 100, 78, 0.911);
-    --secondColor: rgba(190, 172, 9, 0.87);
-    --thirdColor: rgba(45, 100, 29, 0.87);
+    --primeColor: rgba(233, 119, 98, 0.911);
+    --secondColor: rgba(190, 172, 9, 0.911);
+    --thirdColor: rgba(53, 99, 39, 0.87);
    }
 
 
@@ -11,13 +11,15 @@ body {
     font-family: 'Nunito','Outfit', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: var(--darkColor);
+    color: var(--lightColor);
   }
   
   textarea {
     background: transparent;
     border: none;
     resize: none;
-    color: var(--darkColor);
+    color: var(--lightColor);
     border-left: 1px solid var(--darkColor);
     padding: 10px;
   }
@@ -25,9 +27,9 @@ body {
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: var(--darkColor);
+    color: var(--lightColor);
     border-radius: 0;
-    border-bottom: 10px solid var(--darkColor);
+    border-bottom: 5px solid var(--lightColor);
     padding: 3rem auto;
   }
   
@@ -79,6 +81,8 @@ body {
 
   .clearBtn {
     color: var(--lightColor);
+    background-color: transparent;
+    border: none;
   }
   
   .saveBtn i:hover, .clearBtn i:hover {
