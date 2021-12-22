@@ -1,11 +1,16 @@
 :root {
-    --darkColor: rgb(31, 33, 39);
-    --lightColor: rgb(166, 185, 159);
-    --primeColor: rgba(17, 138, 146, 0.938);
-    --secondColor: rgba(190, 172, 9, 0.911);
-    --thirdColor: rgba(236, 147, 45, 0.87);
+    --darkColor: rgb(30, 35, 39);
+    --lightColor: rgb(235, 217, 183);
+    --primeColor: rgb(31, 110, 110);
+    --secondColor:rgba(175, 59, 59, 0.945);
+    --thirdColor: rgba(78, 78, 73, 0.87);
+    --fourthColor: ;
    }
 
+   ::selection {
+    background-color: var(--primeColor);
+    color: var(--darkColor);
+  }
 
 body {
     font-family: 'Nunito','Outfit', sans-serif;
@@ -29,7 +34,7 @@ body {
     background-color: transparent;
     color: var(--lightColor);
     border-radius: 0;
-    border-bottom: 5px solid var(--lightColor);
+    border-bottom: 5px dashed var(--lightColor);
     padding: 3rem auto;
   }
   
@@ -61,25 +66,26 @@ body {
   }
   
   .past {
-    background-color: var(--secondColor);
+    background-color: var(--thirdColor);
    
   }
   
   .present {
-    background-color: var(--thirdColor);
+    background-color: var(--secondColor);
  
   }
   
   .future {
-    background-color: var(--darkColor);
+    background-color: var(--primeColor);
 
   }
   
   .saveBtn {
-    border-left: 1px solid var(--darkColor);
+    border-left: 2px dashed var(--lightColor);
+    border-right: 1px solid var(--lightColor);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: var(--primeColor);
+    background-color: var(--darkColor);
     color: var(--lightColor);
   }
 
@@ -92,6 +98,7 @@ body {
   .saveBtn i:hover, .clearBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+    color:var(--lightColor);
   }
 
   #contact, #mycontact {

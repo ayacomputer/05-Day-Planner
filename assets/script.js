@@ -22,7 +22,7 @@ function changeBgColor() {
     $('.timeBlock').each(function () {
         var blockHour = parseInt($(this).attr('id'));
         console.log(blockHour);
-        if (currentHour > blockHour) {
+        if (currentHour < blockHour) {
             $(this).addClass('future');
         } else if (currentHour === blockHour) {
             $(this).addClass('present');
