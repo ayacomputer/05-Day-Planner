@@ -1,9 +1,9 @@
 :root {
     --darkColor: rgb(31, 33, 39);
     --lightColor: rgb(166, 185, 159);
-    --primeColor: rgba(226, 73, 46, 0.911);
+    --primeColor: rgba(17, 138, 146, 0.938);
     --secondColor: rgba(190, 172, 9, 0.911);
-    --thirdColor: rgba(49, 63, 184, 0.87);
+    --thirdColor: rgba(236, 147, 45, 0.87);
    }
 
 
@@ -47,6 +47,10 @@ body {
     height: 80px;
     border-top: 1px solid var(--lightColor);
   }
+
+  .rowEnd {
+    border-bottom: 1px solid var(--lightColor);
+  }
   
   .hour {
     background-color: var(--lightColor);
@@ -58,17 +62,17 @@ body {
   
   .past {
     background-color: var(--secondColor);
-    color: var(--lightColor);
+   
   }
   
   .present {
-    background-color: var(--primeColor);
-    color: var(--lightColor);
+    background-color: var(--thirdColor);
+ 
   }
   
   .future {
-    background-color: var(--thirdColor);
-    color: var(--lightColor);
+    background-color: var(--darkColor);
+
   }
   
   .saveBtn {

@@ -1,7 +1,7 @@
 //timer
 var today = moment();
 $("#currentDay").text(today.format("dddd, Do MMM, YYYY"));
-$("#currentTime").text(today.format("[at] HH:mm a"));
+$("#currentTime").text(today.format("[at] h:mm a"));
 //variable
 var timeBlock = $('.timeBlock');
 var currentHour = moment().hour();
