@@ -50,9 +50,10 @@ saveBtn.click(function () {
     var btnHour = $(this).parent().attr('id');
     console.log(textValue);
     console.log(btnHour);
-    if (textValue) {
-        localStorage.setItem(btnHour, textValue);
+    if (textValue === " ") {
+        return;
     }
+    localStorage.setItem(btnHour, textValue);
 })
 
 clearBtn.click(function () {
