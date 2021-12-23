@@ -26,3 +26,5 @@ the text for that event is erased in both in the textarea and local storage.
 ```
 ## Product 
 Link: https://ayacomputer.github.io/05-Day-Planner/
+
+![Product animation](assets/product.gif)
